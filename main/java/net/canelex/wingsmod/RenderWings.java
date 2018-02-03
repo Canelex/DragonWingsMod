@@ -52,7 +52,7 @@ public class RenderWings extends ModelBase
 	@SubscribeEvent
 	public void onRenderPlayer(RenderPlayerEvent.Post event)
 	{
-		EntityPlayer player = (EntityPlayer) event.entityPlayer;
+		EntityPlayer player = event.entityPlayer;
 
 		if (settings.enabled && player.equals(mc.thePlayer) && !player.isInvisible()) // Should render wings onto this player?
 		{
@@ -99,6 +99,7 @@ public class RenderWings extends ModelBase
 
 		GL11.glCullFace(1029);
 		GL11.glDisable(GL11.GL_CULL_FACE);
+		GL11.glColor3f(255F, 255F, 255F);
 		GL11.glPopMatrix();
 	}
 
