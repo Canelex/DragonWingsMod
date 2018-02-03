@@ -1,0 +1,12 @@
+[
+{
+  "modid": "wingsmod",
+  "name": "Wings Mod",
+  "description": "Gives the player custom wings.",
+  "version": "1.2",
+  "mcversion": "${mcversion}",
+  "url": "www.youtube.com/canelex",
+  "updateUrl": "",
+  "authorList": ["canelex"]
+}
+]
